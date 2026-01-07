@@ -1,0 +1,76 @@
+{
+    "records": [
+        {
+            "timestamp": "2025-12-25 00:03:03",
+            "present_faces": [
+                "harsh",
+                "pravesh",
+                "yankosh"
+            ]
+        },
+        {
+            "timestamp": "2025-12-25 00:04:27",
+            "present_faces": [
+                "harsh",
+                "pravesh",
+                "yankosh"
+            ]
+        },
+        {
+            "timestamp": "2025-12-25 00:06:18",
+            "present_faces": [
+                "harsh",
+                "pravesh",
+                "yankosh"
+            ]
+        },
+        {
+            "timestamp": "2025-12-25 00:07:26",
+            "present_faces": [
+                "pravesh",
+                "yankosh"
+            ]
+        },
+        {
+            "timestamp": "2025-12-25 00:11:02",
+            "present_faces": [
+                "harsh",
+                "pravesh",
+                "yankosh"
+            ]
+        },
+        {
+            "timestamp": "2025-12-30 23:58:04",
+            "present_faces": [
+                "harsh",
+                "pravesh",
+                "yankosh"
+            ]
+        },
+        {
+            "timestamp": "2025-12-30 23:59:51",
+            "present_faces": [
+                "harsh",
+                "pravesh",
+                "yankosh"
+            ]
+        },
+        {
+            "timestamp": "2025-12-31 00:19:30",
+            "present_faces": [
+                "harsh",
+                "pravesh",
+                "yankosh"
+            ]
+        },
+        {
+            "timestamp": "2026-01-07 22:45:51",
+            "present_faces": [
+                "harsh",
+                "pravesh",
+                "priyanshu",
+                "yankosh"
+            ]
+        }
+    ]
+}

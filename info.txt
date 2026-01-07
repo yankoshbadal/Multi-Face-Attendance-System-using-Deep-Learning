@@ -1,0 +1,11 @@
+- Use ECS 2vCPU 4GB RAM
+- Docker (All persistent data must live OUTSIDE the container.)
+  * Containers read from S3 and write to S3.
+- 
+
+
+
+
+
+Tutorials
+- AWS ECS Fargate RunTask tutorial
