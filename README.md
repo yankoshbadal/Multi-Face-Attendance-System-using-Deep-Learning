@@ -19,4 +19,5 @@ You may use os.getcwd() python function.
 Example (Windows):
 ```python
 BASE_DIR = r"C:\Users\yanko\OneDrive\Desktop\Desktop Files\present-me\colleges"
+```
 ## README files for each script are there in docs folder
