@@ -21,7 +21,7 @@ This script expects inputs like:
 These values are accessed using: sys.argv
 
 **5. Line 8-11**
-```
+```py
 if  len(sys.argv) <  4:
 raise  RuntimeError("Usage: python pre_face_emb.py <college_id> <class_id> <person_name>")
 ```
@@ -48,7 +48,7 @@ colleges/col_001/clsid001/**registered_faces/yankosh**
 10.`os.makedirs(OUTPUT_DIR, exist_ok=True)` Creates the folder if it does not exist. `exist_ok=True` means: do not raise error if folder already exists
 
 **11. Line 26-27**
-```
+```py
 if  not  os.path.exists(INPUT_DIR):
 raise  RuntimeError(f"Input folder not found: {INPUT_DIR}")
 ```
@@ -67,7 +67,7 @@ Creates the path for the YOLO face detection model. `__file__` = location of the
 
 **16. For Loop, Line 45-82---** **for  img_file  in  os.listdir(INPUT_DIR):**
 1. Face Detection
-```
+```py
 	if  not  img_file.lower().endswith((".jpg", ".jpeg", ".png")):
 		continue
 	img_path  =  os.path.join(INPUT_DIR, img_file)
@@ -87,7 +87,7 @@ Creates the path for the YOLO face detection model. `__file__` = location of the
 YOLO returns: bounding boxes, confidence scores, detected objects
 
 3. Crop Results
-```
+```py
 for  r  in  results:
 	for  box  in  r.boxes:
 		x1, y1, x2, y2  =  map(int, box.xyxy[0])
@@ -120,7 +120,7 @@ y2 = bottom
 If cropping failed, skip.
 
 4. Save the cropped images
-```
+```py
 face_count  +=  1
 cv2.imwrite(os.path.join(OUTPUT_DIR, f"face_{face_count}.png"),crop)
 ```
