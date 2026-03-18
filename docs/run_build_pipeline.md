@@ -36,10 +36,13 @@ This creates the path to the **colleges folder** inside the project.
 These should be terminal commands to identify the student folder.
 colleges/col_001/clsid001/yankosh/
 
-7.`PRE_FACE_SCRIPT = os.path.join(PROJECT_DIR, "pre_face_emb.py")`
-   `IMG_AUG_SCRIPT  = os.path.join(PROJECT_DIR, "image_augmentation.py")`
-   `BUILD_EMB_SCRIPT  =  os.path.join(PROJECT_DIR, "build_embeddings.py")`
-   These create full paths of all the script which will be run by this pipeline.
+7.
+```py
+PRE_FACE_SCRIPT = os.path.join(PROJECT_DIR, "pre_face_emb.py")`
+`IMG_AUG_SCRIPT  = os.path.join(PROJECT_DIR, "image_augmentation.py")`
+`BUILD_EMB_SCRIPT  =  os.path.join(PROJECT_DIR, "build_embeddings.py")
+   ```
+These create full paths of all the script which will be run by this pipeline.
 
 ### 8. Function `def run_script(cmd):` Line 18-38
 To **execute another script** and manage its output.
@@ -47,7 +50,7 @@ Parameter:
 `cmd`This is the **command list** to be executed.
 Example: ["python", "pre_face_emb.py", "col_001", "clsid001", "yankosh"]
 **8. Line 19-25**
-```
+```py
 result = subprocess.run(
     cmd,
     capture_output=True,
@@ -65,14 +68,14 @@ Parameters:
 **errors="replace"** If an encoding error occurs, it replaces invalid characters instead of crashing.
 
 **9. Line 31-32**
-```
+```py
 if result.stdout:
     print(result.stdout)
 ```
 If the script prints anything to **standard output**, it will be displayed in the terminal.
 
 **10. Line 33-36**
-```
+```py
 if  result.returncode  !=  0:
 	if  result.stderr:
 		print(result.stderr)
@@ -86,7 +89,7 @@ Checks if the script **failed during execution**.
 
 ### Calling the above function
 **11. Line 46-51**
-```
+```py
 run_script([
     sys.executable,
     PRE_FACE_SCRIPT,
