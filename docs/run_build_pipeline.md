@@ -38,9 +38,9 @@ colleges/col_001/clsid001/yankosh/
 
 7.
 ```py
-PRE_FACE_SCRIPT = os.path.join(PROJECT_DIR, "pre_face_emb.py")`
-`IMG_AUG_SCRIPT  = os.path.join(PROJECT_DIR, "image_augmentation.py")`
-`BUILD_EMB_SCRIPT  =  os.path.join(PROJECT_DIR, "build_embeddings.py")
+PRE_FACE_SCRIPT = os.path.join(PROJECT_DIR, "pre_face_emb.py")
+IMG_AUG_SCRIPT  = os.path.join(PROJECT_DIR, "image_augmentation.py")
+BUILD_EMB_SCRIPT  =  os.path.join(PROJECT_DIR, "build_embeddings.py")
    ```
 These create full paths of all the script which will be run by this pipeline.
 
